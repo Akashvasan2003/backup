@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var product_1 = require("./product");
+var store = new product_1.ProductStore();
+var apple = new product_1.Product("Apple", 2.5, "Fruits");
+var milk = new product_1.Product("Milk", 3.0, "Dairy");
+var bread = new product_1.Product("Bread", 1.02, "Bakery");
+store.addProduct(apple);
+store.addProduct(milk);
+store.addProduct(bread);
+store.listProducts();
