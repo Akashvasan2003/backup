@@ -1,0 +1,9 @@
+fullname
+function getFullName(firstName: string, lastName?: string): string {
+    if (lastName) {
+        return `${firstName} ${lastName}`;
+    }
+    return firstName;
+}
+console.log(getFullName("John", "Doe"));     
+console.log(getFullName("sathya"));          

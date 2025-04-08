@@ -1,0 +1,7 @@
+joing
+
+function concat(arr: string[]): string {
+    return arr.join('');
+}
+console.log(concat(["kerala", " ", "chennai"]));  
+console.log(concat(["Good", "night"]));      

@@ -1,0 +1,17 @@
+array number
+
+function processNumbers(numbers: number[]): { sum: number; difference: number; ascending: number[]; descending: number[] } {
+    if (numbers.length === 0) {
+        return { sum: 0, difference: 0, ascending: [], descending: [] };
+    }
+
+    const sum = numbers.reduce((acc, num) => acc + num, 0);
+    const difference = numbers[0] - sum;
+    const ascending = [...numbers].sort((a, b) => a - b);
+    const descending = [...numbers].sort((a, b) => b - a);
+
+    return { sum, difference, ascending, descending };
+}
+
+const result = processNumbers([1, 2, 3, 4, 5]);
+console.log(result);  

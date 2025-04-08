@@ -1,0 +1,7 @@
+greetuser
+
+function greetUser(name: string, greeting: string = 'Hello'): string {
+    return `${greeting}, ${name}!`;
+}
+console.log(greetUser("Alice")); 
+console.log(greetUser("Bob", "Good morning")); 

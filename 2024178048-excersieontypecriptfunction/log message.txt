@@ -1,0 +1,8 @@
+log message
+
+function logMessage(message: string): void {
+    console.log(message);
+}
+
+logMessage("super, man!"); 
+logMessage("This is a log message.");  

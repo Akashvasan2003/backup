@@ -1,0 +1,10 @@
+
+
+function toUpperCaseArray(strings: string[]): string[] {
+    return strings.map(str => str.toUpperCase());
+}
+
+
+const inputArray = ["hello", "world", "typescript"];
+const uppercasedArray = toUpperCaseArray(inputArray);
+console.log(uppercasedArray); 

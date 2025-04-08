@@ -1,0 +1,10 @@
+SUM NUMBERS
+
+function sumNumbers(...numbers: number[]): number {
+    return numbers.reduce((sum, num) => sum + num, 0);
+}
+
+
+console.log(sumNumbers(1, 2, 3));           
+console.log(sumNumbers(5, 10, 15, 20));     
+console.log(sumNumbers(100, 200, 300));    
