@@ -1,0 +1,106 @@
+/* 🌟 Center the Calendar in the Middle of the Screen */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ebecf0, #e7e9ed);
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* 🌟 Unique Glassmorphism Calendar Styling */
+  .calendar-container {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 90%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* 🎨 Header with Gradient */
+  h2 {
+    font-size: 26px;
+    background: linear-gradient(45deg, #121111, #0a0a0a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  /* 🌀 Calendar Base */
+  .react-calendar {
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* 🔘 Navigation Buttons */
+  .react-calendar__navigation button {
+    color: #fff;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+  }
+  
+  .react-calendar__navigation button:hover {
+    background: linear-gradient(135deg, #e7e9eb, #6a11cb);
+  }
+  
+  /* 🔹 Days of the Week */
+  .react-calendar__month-view__weekdays {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ff4b2b;
+  }
+  
+  /* 💎 Selected Date */
+  .react-calendar__tile--active {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b) !important;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+    transform: scale(1.1);
+  }
+  
+  /* ⚡ Hover Effect */
+  .react-calendar__tile:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    transition: 0.2s;
+  }
+  
+  /* ❌ Disabled Dates */
+  .react-calendar__tile--disabled {
+    color: #999;
+    opacity: 0.5;
+  }
+  
+  /* 🌀 Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
